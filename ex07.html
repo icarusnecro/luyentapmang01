@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let value = prompt("nhap:");
+    let array = [0,1,2,3,4,5,6,7,8,9];
+    for(let i = 0; i < array.length;i++){
+        if(value == array[i]){
+            document.write("co phan tu " + array[i] +" trong mang");
+            array.splice(i,1);
+            array.push(0);
+        }
+    }
+    document.write(array);
+</script>
+</body>
+</html>
